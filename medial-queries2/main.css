@@ -1,3 +1,39 @@
 body {
   background: papayawhip;
 }
+
+* {
+  border: 1px groove black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.a {
+  width: 100%;
+  color: red;
+}
+
+.b {
+  color: blue;
+}
+
+.c {
+  color: green;
+}
+
+.d {
+  color: darkcyan
+}
+
+.e {
+  color: black;
+}
+
+.f {
+  color: blueviolet;
+}
