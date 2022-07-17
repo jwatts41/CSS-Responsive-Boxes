@@ -13,21 +13,32 @@ body {
   min-height: 100vh;
 }
 
-.a {
+header {
   width: 100%;
   color: red;
+  display: flex;
+  flex-grow: 1;
+  min-height: 20vh;
 }
 
-.b {
+.wrapper {
   color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 3;
+  align-items: center;
+  min-height: 60vh;
 }
 
 .c {
   color: green;
+  
 }
 
 .d {
-  color: darkcyan
+  color: darkcyan;
+
 }
 
 .e {
@@ -36,4 +47,11 @@ body {
 
 .f {
   color: blueviolet;
+}
+
+@media (min-width:550px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
