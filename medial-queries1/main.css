@@ -3,5 +3,47 @@ body {
 }
 
 * {
-  border: 2px groove red;
+  border: 2px groove black;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.a {
+  width: 100%;
+  color: green;
+  margin: 1;
+}
+
+.a, .c {
+  flex-grow: 1;
+}
+
+.b {
+  flex-grow: 2.5;
+  color: blue;
+  margin: 1;
+}
+
+.c {
+  color: red;
+  margin: 1;
+}
+
+
+
+@media (min-width: 540px) {
+  .container {flex-direction: row;
+      flex-wrap: wrap;
+
+  }
+}
+
+
+
+
+
