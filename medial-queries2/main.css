@@ -13,45 +13,56 @@ body {
   min-height: 100vh;
 }
 
-header {
-  width: 100%;
-  color: red;
-  display: flex;
-  flex-grow: 1;
-  min-height: 20vh;
-}
-
 .wrapper {
-  color: blue;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 3;
   align-items: center;
-  min-height: 60vh;
+  min-height: 75vh;
 }
 
-.c {
+header, footer, aside, .wrapper {
+  flex-grow: 1;
+  max-height: 10vh;
+  margin: 1em;
+}
+
+aside {
   color: green;
-  
+  display: flex;
+  width: 90%;
+  min-height: 15vh;
+  justify-content: space-between;
 }
 
-.d {
-  color: darkcyan;
-
+aside > div {
+  flex-grow: 10;
 }
 
-.e {
-  color: black;
+main {
+  width: 90%;
+  flex-grow: 3;
 }
 
-.f {
-  color: blueviolet;
-}
-
-@media (min-width:550px) {
+@media (min-width:600px) {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  header {
+    color: red;
+    width: 100%;
+    max-width: 10vh;
+  } 
+  .wrapper {
+    justify-content: stretch;
+    flex-basis: 70%;
+    min-height: 70vh;
+  }
+  footer {
+    flex-grow: 3;
+    min-height: 80vh;
   }
 }
